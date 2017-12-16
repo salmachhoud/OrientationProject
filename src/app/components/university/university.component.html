@@ -1,0 +1,18 @@
+<div class="container" *ngIf="university">
+	<div class="col-md-4 col-sm-4">
+		<img src="{{ university.image_url }}" width="100%">
+	</div>
+
+	<div class="col-md-8 col-sm-8">
+		<h2 class="well">{{ university.name }}</h2>
+		<ul class="bookInfo">
+			<li>Category: {{ university.category }}</li>
+			<li>Adresse: {{ university.adresse }}</li>
+		</ul>
+		<br>
+		<p>{{ university.description }}</p>
+		<a class="btn btn-success" (click)="addToCart()">Add To Favorites</a>
+	</div>
+
+	<p></p>
+</div>

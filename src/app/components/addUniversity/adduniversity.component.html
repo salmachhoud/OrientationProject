@@ -1,0 +1,22 @@
+<div class="container">
+	<h1>Add University</h1>
+	<p>Name</p>
+	<input [(ngModel)]="name" type="text" class="form-control">
+
+	<p>Category</p>
+	<input [(ngModel)]="category" type="text" class="form-control">
+
+	<p>Description</p>
+	<input [(ngModel)]="description" type="text" class="form-control">
+
+	<p>Adresse</p>
+	<input [(ngModel)]="adresse" type="text" class="form-control">
+
+  <p>image_url</p>
+  <input [(ngModel)]="image_url" type="text" class="form-control">
+
+	<Button (click)="addUniversity()" class="btn btn-primary">Submit</Button>
+</div>
+
+
+

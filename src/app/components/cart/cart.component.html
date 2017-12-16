@@ -1,0 +1,16 @@
+<div class="container">
+	<h1 class="well">Favorite Universities</h1>
+	<a (click)="emptyCart()">Clear Favorite List</a>
+	<hr>
+	<p *ngIf="favoriteUniversities.length == 0">Your don't have any favorite university</p>
+	<table class="table table-bordered" *ngIf="favoriteUniversities.length > 0">
+		<tr>
+			<th>University</th>
+			<th>Description</th>
+		</tr>
+		<tr *ngFor="let item of favoriteUniversities">
+			<td>{{ item.name }}</td>
+			<td>{{ item.description }}</td>
+		</tr>
+	</table>
+</div>
