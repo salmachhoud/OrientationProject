@@ -4,7 +4,7 @@ import { UniversityService } from '../../services/university.service';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
-  selector: 'app-book',
+  selector: 'app-university',
   templateUrl: 'university.component.html',
   styleUrls: ['university.component.css']
 })

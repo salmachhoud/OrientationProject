@@ -21,9 +21,9 @@ app.get('/university', function(req, res) {
 });
 
 app.delete('/university', function(req, res) {
-	var bookId = req.query.universityId;
+	var universityId = req.query.universityId;
 
-	University.findByIdAndRemove(bookId, function(err, university) {
+	University.findByIdAndRemove(universityId, function(err, university) {
 		if(err) {
 			res.send({
 				success: false,
@@ -42,7 +42,7 @@ app.delete('/university', function(req, res) {
 app.post('/university', function(req, res) {
 	var universityData = req.body.universityData;
 	var university = new University(universityData);
-  university.save(function(err, createdBookObject) {
+  university.save(function(err, createdUniversityObject) {
 		if(err) {
 			res.send({
 				success: false,
@@ -52,7 +52,7 @@ app.post('/university', function(req, res) {
 			res.send({
 				success: true,
 				message: "University successfully added",
-        university: createdBookObject
+        university: createdUniversityObject
 			});
 		}
 	});

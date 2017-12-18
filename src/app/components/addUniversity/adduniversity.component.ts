@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-addbook',
+  selector: 'app-adduniversity',
   templateUrl: 'adduniversity.component.html',
   styleUrls: ['adduniversity.component.css']
 })

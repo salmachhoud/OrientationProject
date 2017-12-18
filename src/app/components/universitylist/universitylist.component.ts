@@ -3,7 +3,7 @@ import { UniversityService } from '../../services/university.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-booklist',
+  selector: 'app-universitylist',
   templateUrl: 'universitylist.component.html',
   styleUrls: ['universitylist.component.css']
 })
